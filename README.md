@@ -2,8 +2,8 @@
 
 - **OpenAPI specification:** [openapi.yaml](openapi.yaml)
 - **Conformance Classes:**
-  - <https://api.stacspec.org/v1.0.0-rc.1/item-search#query>
-  - <https://api.stacspec.org/v1.0.0-rc.1/ogcapi-features#query>
+  - **STAC API - Item Search** binding: <https://api.stacspec.org/v1.0.0-rc.1/item-search#query>
+  - **STAC API - Features** binding: <https://api.stacspec.org/v1.0.0-rc.1/ogcapi-features#query>
 - **Extension [Maturity Classification](https://github.com/radiantearth/stac-api-spec/blob/main/README.md#maturity-classification):** Candidate
 - **Dependencies:**
   - [Features](https://github.com/radiantearth/stac-api-spec/blob/main/ogcapi-features)
