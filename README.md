@@ -1,9 +1,12 @@
 # STAC API - Query Fragment
 
 - **OpenAPI specification:** [openapi.yaml](openapi.yaml)
-- **Conformance Class:** <https://api.stacspec.org/v1.0.0-rc.1/item-search#query>
+- **Conformance Classes:**
+  - <https://api.stacspec.org/v1.0.0-rc.1/item-search#query>
+  - <https://api.stacspec.org/v1.0.0-rc.1/ogcapi-features#query>
 - **Extension [Maturity Classification](https://github.com/radiantearth/stac-api-spec/blob/main/README.md#maturity-classification):** Candidate
-- **Dependents:**
+- **Dependencies:**
+  - [Features](https://github.com/radiantearth/stac-api-spec/blob/main/ogcapi-features)
   - [Item Search](https://github.com/radiantearth/stac-api-spec/blob/main/item-search)
 
 The `query` parameter adds additional filters for searching on the properties of Item objects. The JSON syntax for
