@@ -4,10 +4,10 @@
 - **Conformance Classes:**
   - **STAC API - Item Search** binding: <https://api.stacspec.org/v1.0.0-rc.1/item-search#query>
   - **STAC API - Features** binding: <https://api.stacspec.org/v1.0.0-rc.1/ogcapi-features#query>
-- **Extension [Maturity Classification](https://github.com/radiantearth/stac-api-spec/blob/main/README.md#maturity-classification):** Candidate
+- **Extension [Maturity Classification](https://github.com/radiantearth/stac-api-spec/tree/v1.0.0-rc.1/README.md#maturity-classification):** Candidate
 - **Dependencies:**
-  - [Features](https://github.com/radiantearth/stac-api-spec/blob/main/ogcapi-features)
-  - [Item Search](https://github.com/radiantearth/stac-api-spec/blob/main/item-search)
+  - [Features](https://github.com/radiantearth/stac-api-spec/tree/v1.0.0-rc.1/ogcapi-features)
+  - [Item Search](https://github.com/radiantearth/stac-api-spec/tree/v1.0.0-rc.1/item-search)
 
 The `query` parameter adds additional filters for searching on the properties of Item objects. The JSON syntax for
 these filters is known as "STACQL" (pronounced `stack-cue-el`).
