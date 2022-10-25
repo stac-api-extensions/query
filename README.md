@@ -9,12 +9,22 @@
   - [Features](https://github.com/radiantearth/stac-api-spec/tree/v1.0.0-rc.1/ogcapi-features)
   - [Item Search](https://github.com/radiantearth/stac-api-spec/tree/v1.0.0-rc.1/item-search)
 
-The `query` parameter adds additional filters for searching on the properties of Item objects. The JSON syntax for
+The Query Extension adds a `query` parameter that allows additional filtering based on the properties of Item objects. The JSON syntax for
 these filters is known as "STACQL" (pronounced `stack-cue-el`).
 
-The syntax for the `query` filter is:
+It is recommended to implement the [Filter Extension](https://github.com/stac-api-extensions/filter)
+instead of the Query Extension. Filter Extension is more well-defined, more expressive, and
+uses the standardized CQL2 query language instead of the proprietary language defined here.
+There is no plan to deprecate this extension, but it is also unlikely to see any further
+refinement or changes.
 
-```js
+The extension can be applied to either the **STAC API - Item Search** endpoint `/search`
+(advertised with the conformance class <https://api.stacspec.org/v1.0.0-rc.1/item-search#query>) or to the 
+**STAC API - Features** endpoint `/collections/{collection_id}/items` (advertised with the conformance class <https://api.stacspec.org/v1.0.0-rc.1/ogcapi-features#query>)
+
+The syntax for the `query` parameter is:
+
+```json
 {
   "query": {
     "<property_name>": {
