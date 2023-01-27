@@ -1,13 +1,22 @@
-# STAC API - Query Extension
+# STAC API - Query Extension Specification
 
+- [STAC API - Query Extension Specification](#stac-api---query-extension-specification)
+  - [Overview](#overview)
+  - [Examples](#examples)
+
+## Overview
+
+- **Title:** Query
 - **OpenAPI specification:** [openapi.yaml](openapi.yaml)
 - **Conformance Classes:**
   - **STAC API - Item Search** binding: <https://api.stacspec.org/v1.0.0-rc.2/item-search#query>
   - **STAC API - Features** binding: <https://api.stacspec.org/v1.0.0-rc.2/ogcapi-features#query>
-- **Extension [Maturity Classification](https://github.com/radiantearth/stac-api-spec/tree/v1.0.0-rc.2/README.md#maturity-classification):** Candidate
+- **Scope:** STAC API - Features, STAC API - Item Search
+- **[Extension Maturity Classification](https://github.com/radiantearth/stac-api-spec/tree/main/README.md#maturity-classification):** Candidate
 - **Dependencies:**
   - [Features](https://github.com/radiantearth/stac-api-spec/tree/v1.0.0-rc.2/ogcapi-features)
   - [Item Search](https://github.com/radiantearth/stac-api-spec/tree/v1.0.0-rc.2/item-search)
+- **Owner**: none
 
 The Query Extension adds a `query` parameter that allows additional filtering based on the properties of Item objects. The JSON syntax for
 these filters is known as "STACQL" (pronounced `stack-cue-el`).
@@ -19,8 +28,8 @@ There is no plan to deprecate this extension, but it is also unlikely to see any
 refinement or changes.
 
 The extension can be applied to either the **STAC API - Item Search** endpoint `/search`
-(advertised with the conformance class <https://api.stacspec.org/v1.0.0-rc.1/item-search#query>) or to the 
-**STAC API - Features** endpoint `/collections/{collection_id}/items` (advertised with the conformance class <https://api.stacspec.org/v1.0.0-rc.1/ogcapi-features#query>)
+(advertised with the conformance class <https://api.stacspec.org/v1.0.0-rc.2/item-search#query>) or to the 
+**STAC API - Features** endpoint `/collections/{collection_id}/items` (advertised with the conformance class <https://api.stacspec.org/v1.0.0-rc.2/ogcapi-features#query>)
 
 The syntax for the `query` parameter is:
 
